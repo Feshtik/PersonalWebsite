@@ -3,11 +3,15 @@
 body {
     font-family: 'Libre Franklin', sans-serif;
     height: 100vh;
+    background-image: linear-gradient(to right, #25aa6c, #41B3A3);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
 }
 
 .column1,
 .column2 {
-    font-size: 20px;
+    font-size: 24px;
     display: flex;
     align-items: center;
 }
@@ -15,13 +19,14 @@ body {
 
 .column1 header,
 .column2 header {
+    font-size: 26px;
     margin-bottom:20px;
-    color: #0a8132;
+    color: #000000;
 }
 
 .column1 .description p,
 .column2 .description p{
-    color: #1bcc56;
+    color: #ffffff;
     margin-bottom: 20px;
     margin-right: 30px; /* Add space to the right of the paragraph */
     max-width: 100%;
@@ -65,7 +70,7 @@ h1 {
     width: 90%;
     position: relative; /* Position the h1 element absolutely */
     left: 2%; /* Move the h1 element to the middle horizontally */
-    color: #1bcc56;
+    color: #ffffff;
     font-size: 20px;
 }
 h1::after {
@@ -90,9 +95,8 @@ h1::after {
     margin-top: 20px; /* Add some space between the content and the footer */
     background-image: linear-gradient(to right, #25aa6c, #41B3A3);
     display: flex; /* Display the children of the footer in a row */
-    justify-content: center; /* Center the content horizontally */
+    justify-content: space-around; /* Center the content horizontally and add space between the elements */
     align-items: center; /* Center the content vertically */
-    justify-content: space-around; /* Add space between the elements */
     border-top: 3px solid #25aa6c; /* Add a 1px solid white border on top */
 
 }
